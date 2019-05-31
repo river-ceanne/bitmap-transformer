@@ -4,16 +4,21 @@
 package bitmap.transformer;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+
 
     public static void main(String[] args) {
 
-        System.out.println(new App().getGreeting());
+//        Path bmp = FileSystems.getDefault().getPath("assets", "LAND.BMP");
+
+        File input = new File(args[0]);
+
+        //transformBMP(bmp);
     }
 
-    public static void transformBMP(){
-        
+    public static void transformBMP(Path bmp){
+        File bmpFile = new File(bmp);
+        BufferedImage image = ImageIO.read(bmpFile);
+
+
     }
 }
