@@ -6,11 +6,27 @@ package bitmap.transformer;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class AppTest {
     @Test
-    public void testAppHasAGreeting() {
+    public void testBitmap() {
+        Bitmap testBMP = new Bitmap("testapp/test.bmp","testoutput/output.bmp");
 
+        assertEquals("testapp/test.bmp",testBMP.getFilepath());
+        assertEquals("testoutput/output.bmp",testBMP.getOutputPath());
 
+    }
+
+    @Test
+    public void testBitmapOutputFile(){
+        Bitmap testBMP = new Bitmap("assets/Java.bmp","assets/TEST.bmp");
+        testBMP.invertBMP();
+        File tmp = new File("assets/TEST.bmp");
+        assertTrue(tmp.exists());
 
     }
 }

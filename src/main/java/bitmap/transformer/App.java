@@ -3,6 +3,7 @@
  */
 package bitmap.transformer;
 
+import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -13,12 +14,7 @@ import java.nio.file.Paths;
 
 public class App {
     public static void main(String[] args) {
-//
-        Path path = FileSystems.getDefault().getPath("./");
-        System.out.println(path.toAbsolutePath());
 
-
-        //Path path = FileSystems.getDefault().getPath("", "gates.js");
         Bitmap bitmap = new Bitmap(Paths.get(args[0]).toString(),args[1]);
 
         bitmap.pinkilizedBMP();
@@ -36,8 +32,6 @@ public class App {
             case "blueralize":
                 bitmap.blueralize();
         }
-//
-//        System.out.println(FileSystems.getDefault().getPath(".").toAbsolutePath());
 
     }
 }

@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59fc3bee-68c3-426d-975b-3cbe42612a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Java.bmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LAND.BMP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LAND2.BMP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LAND3.BMP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lion.bmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NEWLAND.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lion.bmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/bitmap-transformer/bitmap/transformer/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/bitmap-transformer/bitmap/transformer/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/bitmap-transformer/bitmap/transformer/Bitmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/bitmap-transformer/bitmap/transformer/Bitmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/test/bitmap-transformer/bitmap/transformer/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test/bitmap-transformer/bitmap/transformer/AppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lion.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="191">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,10 +43,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="148" column="26" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
+            <state relative-caret-position="-168">
+              <caret line="160" column="12" lean-forward="true" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,11 +66,14 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,9 +94,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" />
         <option value="$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java" />
       </list>
     </option>
   </component>
@@ -164,6 +169,36 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="bitmap-transformer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="bitmap-transformer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="bitmap-transformer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="bitmap-transformer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="bitmap-transformer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="bitmap-transformer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bitmap" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="bitmap-transformer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="bitmap-transformer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bitmap" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="transformer" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -199,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bitmap.transformer.App" />
       <module name="bitmap-transformer" />
@@ -230,8 +265,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -246,10 +281,21 @@
       <option name="presentableId" value="Default" />
       <updated>1559323675576</updated>
     </task>
+    <task id="LOCAL-00001" summary="4 transforms now done">
+      <created>1559333641375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559333641375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="AppTest - 2019.05.31 at 10h 40m 44s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.05.31 at 13h 30m 51s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -257,7 +303,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -267,7 +313,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,6 +333,10 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="4 transforms now done" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 transforms now done" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -297,13 +347,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/NEWLAND.bmp">
       <provider selected="true" editor-type-id="images" />
@@ -334,18 +377,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bitmap/transformer/Bitmap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="148" column="26" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
+        <state relative-caret-position="-168">
+          <caret line="160" column="12" lean-forward="true" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bitmap/transformer/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="191">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bitmap/transformer/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

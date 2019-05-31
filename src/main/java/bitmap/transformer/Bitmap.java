@@ -17,6 +17,14 @@ public class Bitmap {
         this.outputPath = outputPath;
     }
 
+    public String getFilepath() {
+        return filepath;
+    }
+
+    public String getOutputPath() {
+        return outputPath;
+    }
+
     public void grayscaleBMP(){
         BufferedImage img = null;
         File inputFile = null;
@@ -26,7 +34,7 @@ public class Bitmap {
             inputFile = new File(this.filepath);
             img = ImageIO.read(inputFile);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
 
         //get image width and height
@@ -59,7 +67,7 @@ public class Bitmap {
             inputFile = new File(this.outputPath);
             ImageIO.write(img, "bmp", inputFile);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
     }
 
@@ -72,7 +80,7 @@ public class Bitmap {
             inputPath = new File(String.valueOf(this.filepath));
             img = ImageIO.read(inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
         //get image width and height
         int width = img.getWidth();
@@ -99,7 +107,7 @@ public class Bitmap {
             inputPath = new File(this.outputPath);
             ImageIO.write(img, "bmp", inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
 
 
@@ -114,7 +122,7 @@ public class Bitmap {
             inputPath = new File(this.filepath);
             img = ImageIO.read(inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
         //get image width and height
         int width = img.getWidth();
@@ -141,7 +149,7 @@ public class Bitmap {
             inputPath = new File(this.outputPath);
             ImageIO.write(img, "bmp", inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
 
     }
@@ -154,7 +162,7 @@ public class Bitmap {
             inputPath = new File(this.filepath);
             img = ImageIO.read(inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
         //get image width and height
         int width = img.getWidth();
@@ -182,7 +190,7 @@ public class Bitmap {
             inputPath = new File(this.outputPath);
             ImageIO.write(img, "bmp", inputPath);
         }catch(IOException e){
-            System.out.println(e);
+            System.err.println(e);
         }
 
     }
