@@ -3,77 +3,35 @@
  */
 package bitmap.transformer;
 
+import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class App {
     public static void main(String[] args) {
 
-//        Path bmp = FileSystems.getDefault().getPath("assets", "LAND.BMP");
+        Bitmap bitmap = new Bitmap(Paths.get(args[0]).toString(),args[1]);
 
-//        File input = new File(args[0]);
-        Path filepath = FileSystems.getDefault().getPath("assets", "LAND.BMP");
-        Bitmap bitmap = new Bitmap(filepath);
-        bitmap.grayscaleBMP();
+        bitmap.pinkilizedBMP();
 
-        System.out.println(FileSystems.getDefault().getPath(".").toAbsolutePath());
-        //grayscaleBMP(filepath);
-
-    }
-
-    public static void transformBMP(Path bmp) throws IOException {
-        File bmpFile = new File(String.valueOf(bmp));
-        BufferedImage image = ImageIO.read(bmpFile);
-
-    }
-
-    public static void grayscaleBMP(Path filepath){
-        BufferedImage img = null;
-        File inputFile = null;
-
-        //read image
-        try{
-            inputFile = new File(String.valueOf(filepath));
-            img = ImageIO.read(inputFile);
-        }catch(IOException e){
-            System.out.println(e);
+        switch (args[2]){
+            case "grayscale":
+                bitmap.grayscaleBMP();
+                break;
+            case "invert":
+                bitmap.invertBMP();
+                break;
+            case "pinkilize":
+                bitmap.pinkilizedBMP();
+                break;
+            case "blueralize":
+                bitmap.blueralize();
         }
 
-        //get image width and height
-        int width = img.getWidth();
-        int height = img.getHeight();
-
-        //convert to grayscale
-        for(int row = 0; row < height; row++){
-            for(int column = 0; column < width; column++){
-                int RGB = img.getRGB(column,row);
-
-                int a = (RGB>>24)&0xff;
-                int r = (RGB>>16)&0xff;
-                int g = (RGB>>8)&0xff;
-                int b = RGB&0xff;
-
-                //calculate average
-                int avg = (r+g+b)/3;
-
-                //replace RGB value with avg
-                RGB = (a<<24) | (avg<<16) | (avg<<8) | avg;
-
-                img.setRGB(column, row, RGB);
-
-            }
-        }
-
-        //write image
-        try{
-            inputFile = new File("assets/" + "NEWLAND.bmp");
-            ImageIO.write(img, "bmp", inputFile);
-        }catch(IOException e){
-            System.out.println(e);
-        }
     }
 }
